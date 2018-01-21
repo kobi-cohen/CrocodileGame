@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Test my js file </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="main"></div>
+<div id="score">SCORES: 0  </div>
+<div id="start">Start !</div>
+<div class="teeth" id="teeth1"></div>
+<div class="teeth" id="teeth2"></div>
+<div class="teeth" id="teeth3"></div>
+<div class="teeth" id="teeth4"></div>
+<div class="teeth" id="teeth5"></div>
+<div class="teeth" id="teeth6"></div>
+<div class="teeth" id="teeth7"></div>
+<div class="teeth" id="teeth8"></div>
+<div class="teeth" id="teeth9"></div>
+
+<script>
+	var score=0;
+	var randTeeth="teeth"+Math.floor(Math.random()*10);
+	var s=document.getElementById("score");
+	var gameOver=1;
+	var start=document.getElementById("start");
+	function myFunction(){
+		if(gameOver){
+		this.style.display="none";
+		if (this.id==randTeeth){
+			gameOver=0;
+			s.innerHTML="SCORES: Boom - Game Over !!!";
+			start.style.display="block";
+		} else{
+		score=score+10;
+		s.innerHTML="SCORES: "+score+"  ";
+	
+	}}
+	}
+	var teeth=document.getElementsByClassName("teeth");
+	for (var i = 0; i < teeth.length; i++) {
+    teeth[i].addEventListener('click', myFunction, true);
+
+    start.addEventListener("click",function(){
+
+    	location.reload();
+    });
+}
+
+
+
+</script>
+</body>
+</html>

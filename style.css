@@ -1,0 +1,102 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+.main{
+	position: absolute;
+	top:0;
+	height: 598px;
+	width: 897px;	
+	background-image: url("./aligator/ORIGINALWithoutTeeths.png");
+	
+}
+/*.mainTest{
+	position: absolute;
+	top:0;
+	height: 598px;
+	width: 897px;	
+	background-image: url("./aligator/Original_OPACITIY80.png");
+	
+}*/
+#score{
+	position: absolute;
+	top: 15px;
+	left: 25px;
+	border: 2px black solid;
+	font-size: 45px;
+	color: white;
+
+}
+#start{
+	position: absolute;
+	padding: 30px;
+	border: 2px red solid;
+	top: 235px;
+    left: 359px;
+	font-size: 75px;
+	color: red;
+	z-index: 999;
+	display: none;
+}
+#start:hover{
+	background-color:white;
+	opacity: 0.4;
+}
+.teeth{
+	position: absolute;
+	width: 48px;
+	height: 56px;
+	background-image: url("./teeths/teeth.png");
+}
+#teeth1{
+	top: 276px;
+    left: 534px;
+	
+}
+#teeth2{
+	top: 307px;
+    left: 597px;
+}
+#teeth3{
+	top: 348px;
+    left: 655px;
+
+}
+#teeth4{
+	
+	top: 415px;
+    left: 659px;
+	
+}
+#teeth5{
+	
+	top: 450px;
+    left: 601px;
+	
+}
+#teeth6{
+	
+	top: 466px;
+    left: 541px;
+	
+}
+#teeth7{
+	
+    top: 455px;
+    left: 477px;
+	
+}
+#teeth8{
+	
+	top: 424px;
+    left: 417px;
+	
+}
+#teeth9{
+	
+    top: 389px;
+    left: 356px;
+	
+}
